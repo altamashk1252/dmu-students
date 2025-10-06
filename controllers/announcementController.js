@@ -1,5 +1,5 @@
 // controllers/announcementController.js
-const Announcement = require('../models/Announcement'); // <-- Import model here
+const Announcement = require('../models/announcement'); // <-- Import model here
 
 
 exports.createAnnouncement = async (req, res) => {
