@@ -1,8 +1,8 @@
 {
   "name": "dmu-nodejs",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "DMU College Management System Backend",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
