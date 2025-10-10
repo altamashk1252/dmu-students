@@ -1,4 +1,4 @@
-const News = require('../models/News'); // Sequelize model
+const { News } = require('../models'); // Sequelize model
 
 exports.createNews = async (req, res) => {
   try {

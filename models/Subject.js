@@ -1,12 +1,3 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('./index');
-
-const Subject = sequelize.define('Subject', {
-  name: {
-    type: DataTypes.STRING,
-    unique: true,
-    allowNull: false
-  }
-});
-
-module.exports = Subject;
+// This model is now defined in models/index.js to avoid circular dependencies
+// Import from models/index.js instead
+module.exports = require('./index').Subject;

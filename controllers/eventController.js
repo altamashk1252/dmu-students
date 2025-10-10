@@ -1,4 +1,4 @@
-const Event = require('../models/Event');
+const { Event } = require('../models');
 
 const getEvents = async (req, res) => {
   try {
@@ -12,7 +12,7 @@ const getEvents = async (req, res) => {
 
 const createEvent = async (req, res) => {
   try {
-    const { title, description, image_url, date } = req.body;
+    const { title, description, image_url, date,location } = req.body;
 
     if (!title || !date) {
       return res.status(400).json({ message: 'Title and Date are required' });
@@ -27,6 +27,7 @@ const createEvent = async (req, res) => {
       description, 
       image_url, 
       date,
+      location,
       createdBy,
       creatorRole
     });

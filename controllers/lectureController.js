@@ -1,4 +1,4 @@
-const Lecture = require('../models/Lecture');
+const { Lecture } = require('../models');
 
 exports.scheduleLecture = async (req, res) => {
   try {

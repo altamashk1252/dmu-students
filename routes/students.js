@@ -4,6 +4,6 @@ const { protect } = require('../middleware/authMiddleWare'); // ensure protect i
 
 const router = require('express').Router();
 
-router.get('/', protect, getStudents);
+router.post('/', protect, getStudents);
 
 module.exports = router;
